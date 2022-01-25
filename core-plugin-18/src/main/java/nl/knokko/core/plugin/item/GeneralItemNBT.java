@@ -43,7 +43,7 @@ public class GeneralItemNBT {
 		}
 
 		String lastKey = key[key.length - 1];
-		if (nestedTag.q(lastKey)) {
+		if (nestedTag.e(lastKey)) {
 			return nestedTag.l(lastKey);
 		} else {
 			return defaultValue;
@@ -60,7 +60,7 @@ public class GeneralItemNBT {
 		}
 
 		String lastKey = key[key.length - 1];
-		if (nestedTag.q(lastKey)) {
+		if (nestedTag.e(lastKey)) {
 			return nestedTag.h(lastKey);
 		} else {
 			return defaultValue;
@@ -81,7 +81,7 @@ public class GeneralItemNBT {
 		NBTTagCompound nestedTag = tag;
 		for (int index = 0; index < key.length - 1; index++) {
 			String currentKey = key[index];
-			if (nestedTag.q(currentKey)) {
+			if (nestedTag.e(currentKey)) {
 				nestedTag = nestedTag.p(currentKey);
 			} else {
 				NBTTagCompound child = new NBTTagCompound();

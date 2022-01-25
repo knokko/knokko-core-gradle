@@ -81,7 +81,7 @@ public class CustomItemNBT {
 	 * return true if and only if the item has the tag.
 	 */
 	public boolean hasOurNBT() {
-		return nbt != null && nbt.q(KEY);
+		return nbt != null && nbt.e(KEY);
 	}
 	
 	private void assertOurNBT() throws UnsupportedOperationException {
@@ -149,7 +149,7 @@ public class CustomItemNBT {
 	public Long getLastExportTime() throws UnsupportedOperationException {
 		assertOurNBT();
 		
-		if (getOurTag().q(LAST_EXPORT_TIME)) {
+		if (getOurTag().e(LAST_EXPORT_TIME)) {
 			return getOurTag().i(LAST_EXPORT_TIME);
 		} else {
 			return null;
@@ -180,7 +180,7 @@ public class CustomItemNBT {
 	public BooleanRepresentation getBooleanRepresentation() throws UnsupportedOperationException {
 		assertOurNBT();
 		
-		if (getOurTag().q(BOOL_REPRESENTATION)) {
+		if (getOurTag().e(BOOL_REPRESENTATION)) {
 			byte[] byteRepresentation = getOurTag().m(BOOL_REPRESENTATION);
 			return new BooleanRepresentation(byteRepresentation);
 		} else {
@@ -212,7 +212,7 @@ public class CustomItemNBT {
 		assertOurNBT();
 		
 		NBTTagCompound ourTag = getOurTag();
-		if (!ourTag.q(DURABILITY))
+		if (!ourTag.e(DURABILITY))
 			return null;
 		
 		return getOurTag().i(DURABILITY);
