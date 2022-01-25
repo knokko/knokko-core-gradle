@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'com.github.johnrengelman.shadow'
+    
+    group = 'nl.knokko.core'
+
+    repositories {
+        mavenCentral()
+
+        maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+
+        mavenLocal()
+    }
+
+    dependencies {
+        testImplementation group: 'junit', name: 'junit', version: '4.12'
+    }
+}
+
+project(':core-plugin-13') {
+    dependencies {
+        compileOnly 'org.bukkit:craftbukkit:1.13.2-R0.1-SNAPSHOT'
+    }
+}
+
+project(':core-plugin-14') {
+    dependencies {
+        compileOnly 'org.spigotmc:spigot:1.14.4-R0.1-SNAPSHOT'
+    }
+}
+
+project(':core-plugin-15') {
+    dependencies {
+        compileOnly 'org.spigotmc:spigot:1.15.2-R0.1-SNAPSHOT'
+    }
+}
+
+project(':core-plugin-16') {
+    dependencies {
+        compileOnly 'org.spigotmc:spigot:1.16.5-R0.1-SNAPSHOT'
+    }
+}
+
+project(':core-plugin-17') {
+    dependencies {
+        compileOnly 'org.spigotmc:spigot:1.17.1-R0.1-SNAPSHOT'
+    }
+}
+
+project(':core-plugin-18') {
+    dependencies {
+        compileOnly 'org.spigotmc:spigot:1.18.1-R0.1-SNAPSHOT'
+    }
+}
