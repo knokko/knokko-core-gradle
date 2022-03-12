@@ -3,7 +3,7 @@ package nl.knokko.core.plugin.entity;
 import java.util.Optional;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_18_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_18_R2.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 import org.bukkit.util.Vector;
 

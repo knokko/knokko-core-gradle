@@ -56,7 +56,7 @@ project(':core-plugin-17') {
 
 project(':core-plugin-18') {
     dependencies {
-        compileOnly 'org.spigotmc:spigot:1.18.1-R0.1-SNAPSHOT'
+        compileOnly 'org.spigotmc:spigot:1.18.2-R0.1-SNAPSHOT'
         implementation project(':bit-helper')
     }
 }

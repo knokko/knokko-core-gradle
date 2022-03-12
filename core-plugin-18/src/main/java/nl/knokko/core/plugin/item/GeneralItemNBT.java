@@ -1,6 +1,6 @@
 package nl.knokko.core.plugin.item;
 
-import org.bukkit.craftbukkit.v1_18_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_18_R2.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 
 import net.minecraft.nbt.NBTTagCompound;
@@ -21,7 +21,7 @@ public class GeneralItemNBT {
 
 	private GeneralItemNBT(net.minecraft.world.item.ItemStack nmsStack, boolean canWrite) {
 		this.nmsStack = nmsStack;
-		this.tag = nmsStack != null ? nmsStack.s() : null;
+		this.tag = nmsStack != null ? nmsStack.u() : null;
 		this.canWrite = canWrite;
 		if (nmsStack == null && canWrite) {
 			throw new IllegalArgumentException("Can't write to nbt of a null item stack");

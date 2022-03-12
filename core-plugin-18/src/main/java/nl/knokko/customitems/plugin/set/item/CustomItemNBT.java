@@ -2,7 +2,7 @@ package nl.knokko.customitems.plugin.set.item;
 
 import java.util.function.Consumer;
 
-import org.bukkit.craftbukkit.v1_18_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_18_R2.inventory.CraftItemStack;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -63,7 +63,7 @@ public class CustomItemNBT {
 	
 	private CustomItemNBT(org.bukkit.inventory.ItemStack bukkitStack, boolean allowWrite) {
 		this.nmsStack = CraftItemStack.asNMSCopy(bukkitStack);
-		this.nbt = nmsStack.s();
+		this.nbt = nmsStack.u();
 		this.allowWrite = allowWrite;
 	}
 	

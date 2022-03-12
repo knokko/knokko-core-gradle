@@ -1,7 +1,7 @@
 package nl.knokko.core.plugin.entity;
 
-import org.bukkit.craftbukkit.v1_18_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_18_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_18_R2.CraftWorld;
+import org.bukkit.craftbukkit.v1_18_R2.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
 import net.minecraft.world.damagesource.EntityDamageSourceIndirect;
