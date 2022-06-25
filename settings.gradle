@@ -1,2 +1,2 @@
 rootProject.name = 'knokko-core'
-include 'bit-helper', 'core-plugin-13', 'core-plugin-14', 'core-plugin-15', 'core-plugin-16', 'core-plugin-17', 'core-plugin-18'
+include 'bit-helper', 'core-plugin-13', 'core-plugin-14', 'core-plugin-15', 'core-plugin-16', 'core-plugin-17', 'core-plugin-18', 'core-plugin-19'
