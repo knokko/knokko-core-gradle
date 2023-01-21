@@ -1,7 +1,7 @@
 package nl.knokko.core.plugin.item;
 
 import net.minecraft.nbt.NBTTagCompound;
-import org.bukkit.craftbukkit.v1_19_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_19_R2.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 
 public class GeneralItemNBT {
@@ -38,7 +38,7 @@ public class GeneralItemNBT {
 		NBTTagCompound nestedTag = tag;
 		for (int index = 0; index < key.length - 1; index++) {
 			nestedTag = nestedTag.p(key[index]);
-			if (nestedTag == null || nestedTag.f()) return defaultValue;
+			if (nestedTag == null || nestedTag.g()) return defaultValue;
 		}
 
 		String lastKey = key[key.length - 1];
@@ -55,7 +55,7 @@ public class GeneralItemNBT {
 		NBTTagCompound nestedTag = tag;
 		for (int index = 0; index < key.length - 1; index++) {
 			nestedTag = nestedTag.p(key[index]);
-			if (nestedTag == null || nestedTag.f()) return defaultValue;
+			if (nestedTag == null || nestedTag.g()) return defaultValue;
 		}
 
 		String lastKey = key[key.length - 1];

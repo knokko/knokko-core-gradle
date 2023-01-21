@@ -4,8 +4,8 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.EntityDamageSource;
 import net.minecraft.world.damagesource.EntityDamageSourceIndirect;
 import net.minecraft.world.entity.projectile.EntitySmallFireball;
-import org.bukkit.craftbukkit.v1_19_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_19_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_19_R2.CraftWorld;
+import org.bukkit.craftbukkit.v1_19_R2.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
 public class EntityDamageHelper {
@@ -15,7 +15,7 @@ public class EntityDamageHelper {
 			double projectileMotionX, double projectileMotionY, double projectileMotionZ) {
 		
 		((CraftEntity) toDamage).getHandle().a(new EntityDamageSourceIndirect("thrown",
-				new EntitySmallFireball(((CraftWorld) toDamage.getWorld()).getHandle(), 
+				new EntitySmallFireball(((CraftWorld) toDamage.getWorld()).getHandle(),
 				projectilePositionX, projectilePositionY, projectilePositionZ, 
 				projectileMotionX, projectileMotionY, projectileMotionZ), 
 				((CraftEntity) responsibleShooter).getHandle()), damage);
@@ -39,14 +39,14 @@ public class EntityDamageHelper {
 
 		public CustomEntityDamageSource setIgnoreArmor(boolean ignoreArmor) {
 			if (ignoreArmor) {
-				super.n();
+				super.m();
 			}
 			return this;
 		}
 
 		public CustomEntityDamageSource setFire(boolean isFire) {
 			if (isFire) {
-				super.s();
+				super.r();
 			}
 			return this;
 		}

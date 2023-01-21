@@ -2,7 +2,7 @@ package nl.knokko.core.plugin.entity;
 
 import net.minecraft.world.phys.Vec3D;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_19_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_19_R2.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 import org.bukkit.util.Vector;
 
@@ -27,7 +27,7 @@ public class EntityLineIntersection {
 		);
 
 
-		Optional<Vec3D> intersection = nmsEntity.cA().b(lineStart, lineEnd);
+		Optional<Vec3D> intersection = nmsEntity.cD().b(lineStart, lineEnd);
 		if (intersection.isPresent()) {
 			return Math.sqrt(intersection.get().g(lineStart));
 		} else {

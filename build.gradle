@@ -63,7 +63,7 @@ project(':core-plugin-18') {
 
 project(':core-plugin-19') {
     dependencies {
-        compileOnly 'org.spigotmc:spigot:1.19-R0.1-SNAPSHOT'
+        compileOnly 'org.spigotmc:spigot:1.19.3-R0.1-SNAPSHOT'
         implementation project(':bit-helper')
     }
 }

@@ -2,7 +2,7 @@ package nl.knokko.customitems.plugin.set.item;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.item.ItemStack;
-import org.bukkit.craftbukkit.v1_19_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_19_R2.inventory.CraftItemStack;
 
 import java.util.function.Consumer;
 
